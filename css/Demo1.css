@@ -1,0 +1,159 @@
+html {
+    scroll-behavior: smooth;
+}
+
+#mainP{
+    height: 20px;
+    color: white;
+}
+
+#mainP a{
+    color: white;
+}
+
+.navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.main{
+    position: relative;
+}
+
+.main #imagesMain{
+    max-height: 100vh;
+    object-fit: cover;
+}
+
+.main #speed{
+    width: 40px;
+    height: 40px;
+    color: white;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    border-radius: 52%;
+}
+
+.main .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    height: 100%;
+}
+
+.main .overlay .cont,
+.main .overlay .row-s-1{
+    height: 100%;
+}
+
+.element{
+    animation: rowAnimation infinite;
+    animation-duration: 1s;
+}
+@keyframes rowAnimation {
+    from {top: 0px;}
+    to {top: 80px;}
+}
+
+.main .overlay .row-s-1 .row2 #boton{
+    color: white;
+    border: 1 solid white;
+    border-radius: 40%;
+    width: 100%;
+}
+
+.main .overlay .row-s-1 .row3 a{
+    color: white;
+}
+
+.row4 .icono{
+    color: white;
+    height: 100px;
+    width: 20px;
+    position: relative;
+    animation: btnFlecha infinite;
+    animation-duration: 1s;
+}
+@keyframes btnFlecha {
+    from {top: 0px;}
+    to {top: 10px;}
+}
+
+.s-1{
+    position: relative;
+    background-color: black;
+    color: white;
+    max-height: 100vh;
+}
+
+.s-1 #boton{
+    flex: auto;
+    width: 100%;
+    border-radius: 40%;
+}
+
+.s-1 #images{
+    max-height: 100vh;
+    object-fit: cover;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    border-radius: 65%;
+    opacity: 60%;
+}
+
+.s-1 .specificaciones{
+    margin-top: 50px;
+}
+
+@media (max-width: 800px) {
+  
+    .main #imagesMain{
+        height: 100vh;
+        object-fit: cover;
+    }
+
+    .main .overlay .row-s-1 .row2{
+        align-items: flex-start !important;
+    }
+
+    .main .overlay .row{
+        --bs-gutter-x: 0;
+    }
+
+    .s-1 .row{
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+
+    .s-1 #images{
+        margin-top: 60px;
+        margin-bottom: 0;
+    }
+
+    .s-1 .specificaciones{
+        margin-top: 10;
+    }
+    
+    .s-1 .specificaciones .descrip{
+        margin: 0;
+        align-items: flex-start !important;
+    }
+
+    .s-1 .specificaciones dl{
+        margin-top: 30px;
+        height: 183px;
+    }
+
+    .s-1 .specificaciones #dtdd{
+        visibility: hidden;
+    }
+
+    .s-1 .specificaciones .row4{
+        padding: 0;
+    }
+}
